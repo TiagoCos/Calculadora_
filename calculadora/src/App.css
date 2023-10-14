@@ -1,0 +1,30 @@
+.App {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.App > form{
+  display: flex;
+  flex-direction:row;
+
+  border: 2px solid black;
+  color: #333;
+  background-color: darkgrey;
+  padding: 5em;
+  width: 70%;
+  margin: 4em;
+
+}
+button[type = "Submit"]{
+  padding: 10px 20px;
+  color: black;
+  background-color: #565656;
+}
+.op{
+  padding: 7px;
+  background-color:#517771 ;
+}
+.op:hover{
+  opacity: 0.8;
+  background-color: #517771c4;
+}
