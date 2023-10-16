@@ -1,30 +1,50 @@
 .App {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   box-sizing: border-box;
 }
 
-.App > form{
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 240px;
+  padding: 10px;
+}
+
+.display {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+.row {
   display: flex;
-  flex-direction:row;
+  justify-content: space-between;
+}
 
-  border: 2px solid black;
-  color: #333;
-  background-color: darkgrey;
-  padding: 5em;
-  width: 70%;
-  margin: 4em;
+button {
+  padding: 10px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
+button:hover {
+  background-color: #ddd;
 }
-button[type = "Submit"]{
-  padding: 10px 20px;
-  color: black;
-  background-color: #565656;
-}
-.op{
-  padding: 7px;
-  background-color:#517771 ;
-}
-.op:hover{
-  opacity: 0.8;
-  background-color: #517771c4;
+
+button:active {
+  background-color: #ccc;
 }
